@@ -1,0 +1,25 @@
+{{#header-dropdown iconId="toggle-slack-menu"
+					class="slack-menu"
+					icon="slack"
+					toggleVisible=dropdownVisible
+					loginAction="showLogin"
+					title="slack.icon_title"}}
+	{{#if showCount}}
+		<span class='badge-notification slack-member-count'>{{memberCount}}</span>
+	{{/if}}
+	{{#menu-panel visible=dropdownVisible}}
+		<div class="slack-panel-header">
+			{{#if controller.siteSettings.slack_link}}
+				{{fa-icon "server"}} <a href="{{team.url}}">{{team.name}}</a>
+			{{else}}
+				{{fa-icon "server"}} {{team.name}}
+			{{/if}}
+		</div>
+		<hr />
+		<ul>
+			{{#each member in members}}
+				{{slack-member name=member.name presence=member.presence channels=member.channels}}
+			{{/each}}
+		</ul>
+	{{/menu-panel}}
+{{/header-dropdown}}

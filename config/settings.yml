@@ -1,0 +1,16 @@
+plugins:
+  slack_enabled:
+    default: true
+    client: true
+  slack_endpoint:
+    default: 'https://slack.com/api/'
+  slack_token:
+    default: ''
+  slack_interval:
+    default: 60000
+    client: true
+  slack_link:
+    default: true
+    client: true
+  slack_away:
+    default: true

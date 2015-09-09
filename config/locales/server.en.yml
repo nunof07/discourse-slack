@@ -1,0 +1,8 @@
+en:
+  site_settings:
+    slack_enabled: "Display Slack icon?"
+    slack_endpoint: "Slack Web API endpoint"
+    slack_token: "Slack authentication token"
+    slack_interval: "Refresh interval in milliseconds"
+    slack_link: "Display link to Slack domain?"
+    slack_away: "Display away members?"

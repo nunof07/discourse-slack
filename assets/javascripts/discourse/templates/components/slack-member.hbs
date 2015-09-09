@@ -1,0 +1,8 @@
+<span href {{action "expand"}} class="slack-member-name">{{fa-icon "user"}} {{name}} <i class="{{caretClass}}"></i></span>
+<section {{bind-attr class="expanded::hidden :slack-member-content"}}>
+	<ul>
+	{{#each channel in channels}}
+		<li class="slack-channel">#{{channel}}</li>
+	{{/each}}
+	</ul>
+</section>

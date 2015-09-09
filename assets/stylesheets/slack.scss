@@ -1,0 +1,54 @@
+.slack-menu {
+	float: left;
+	
+	.slack-member-count {
+		cursor: default;
+	}
+	.menu-panel {
+		position: fixed;
+		text-align: left;
+		
+		hr {
+			margin: 3px 0;
+		}
+		ul ul {
+			padding-left: 20px;
+		}
+		.panel-body {
+			max-height: 500px;
+			height: auto !important;
+		}
+		.fa {
+			font-size: 1em;
+			width: auto;
+			height: auto;
+			line-height: 1em;
+		}
+		.slack-panel-header {
+			color: dark-light-choose(scale-color($primary, $lightness: 50%), scale-color($secondary, $lightness: 50%));
+			font-size: 1.1em;
+			
+			.fa {
+				font-size: 1.1em;
+				line-height: 1.1em;
+			}
+		}
+		.slack-member-away {
+			.fa-user {
+				color: dark-light-choose(scale-color($primary, $lightness: 75%), scale-color($secondary, $lightness: 75%));
+			}
+		}
+		.slack-member-name {
+			cursor: pointer;
+		}
+	}
+}
+.d-header .icons {
+	.unread-private-messages {
+		left: initial;
+		right: 27px;
+	}
+	> div.ember-view {
+		float: left;
+	}
+}
