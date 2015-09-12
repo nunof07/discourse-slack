@@ -11,7 +11,6 @@
 			padding-left: 20px;
 		}
 		.panel-body {
-			max-height: 500px;
 			height: auto !important;
 		}
 		.fa {
@@ -34,6 +33,13 @@
 		}
 		.slack-member-name {
 			cursor: pointer;
+		}
+	}
+	.menu-panel.slide-in {
+		height: auto !important;
+		
+		.panel-body {
+			position: static;
 		}
 	}
 }
