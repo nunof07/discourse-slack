@@ -1,6 +1,6 @@
 # name: Slack
 # about: Displays member and channel information from Slack in a header dropdown
-# version: 0.1.2
+# version: 0.1.3
 # authors: Nuno Freitas (nunofreitas@gmail.com)
 # url: https://github.com/nunof07/discourse-slack
 
